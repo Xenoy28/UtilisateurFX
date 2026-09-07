@@ -6,4 +6,8 @@ module com.example.utilisateurfx {
 
     opens com.example.utilisateurfx to javafx.fxml;
     exports com.example.utilisateurfx;
+    exports appli.accueil;
+    opens appli.accueil to javafx.fxml;
+    exports appli;
+    opens appli to javafx.fxml;
 }
