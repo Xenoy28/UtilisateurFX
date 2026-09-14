@@ -1,13 +1,9 @@
-module com.example.utilisateurfx {
+module appli {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires spring.security.crypto;
 
-    requires org.kordamp.bootstrapfx.core;
-
-    opens com.example.utilisateurfx to javafx.fxml;
-    exports com.example.utilisateurfx;
-    exports appli.accueil;
     opens appli.accueil to javafx.fxml;
     exports appli;
-    opens appli to javafx.fxml;
 }

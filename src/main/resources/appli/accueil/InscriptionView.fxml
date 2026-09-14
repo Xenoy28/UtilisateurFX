@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="appli.accueil.InscriptionController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="appli.accueil.InscriptionController"
+      alignment="CENTER"
+      spacing="10"
+      style="-fx-padding: 30;">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+   <Label text="Inscription" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+   <Label text="Nom :"/>
+   <TextField fx:id="nomField" promptText="Votre nom"/>
+   <Label text="Prénom :"/>
+   <TextField fx:id="prenomField" promptText="Votre prénom"/>
+   <Label text="Email :"/>
+   <TextField fx:id="emailField" promptText="Votre email"/>
+   <Label text="Mot de passe :"/>
+   <PasswordField fx:id="passwordField" promptText="Votre mot de passe"/>
+   <Label text="Confirmation :"/>
+   <PasswordField fx:id="confirmPasswordField" promptText="Confirmez le mot de passe"/>
+   <Label fx:id="errorLabel" text=""/>
+   <Button text="S'inscrire" onAction="#onInscriptionClick"/>
+   <Button text="Retour" onAction="#onRetourClick"/>
+
 </VBox>
